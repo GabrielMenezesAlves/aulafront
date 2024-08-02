@@ -1,0 +1,14 @@
+
+.imagem{
+    width: 250px;
+    height: 50px;
+    background-color: cadetblue;
+    margin: 0 auto;
+}
+
+.imagem:hover{/* aqui a gente muda o tamanho pra quando passar o mouse mudar o icone, dar efeito */
+    background-color: aquamarine;
+    cursor: pointer;
+    width: 260px;
+    height: 60px;
+} 
