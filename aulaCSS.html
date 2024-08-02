@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<title>CSS</title>
+		
+		<style>
+			h2{
+				color: blue;
+			}
+			.linha2{
+				color: red;
+			}
+			.linha4{
+				color: yellow;
+			}
+			.fundo{
+				background-color: yellow;
+			}
+			h2.fundo {
+				background-color: aqua;
+			}
+			.linha5{
+				text-decoration-line: underline;
+				font-size: 90px;			
+				font-weight: bold;
+			}
+
+			#pagina{
+				color: blueviolet;
+			}
+
+			.fundo, .texto {
+				width: 350px;
+			}
+
+			* {
+				border: 1px solid red;
+			}
+
+			div p {
+				height: 80px;
+			}
+
+			.fundo:hover {
+				background-color: coral;
+				cursor: pointer;
+			}
+			
+		</style>
+		
+	</head>
+
+	<body>
+		<h1 id="pagina">CSS</h1>
+		
+		<h2>titulo 1</h2>
+		<h2 class="linha2 fundo">titulo 2</h2>
+		<h2 class="fundo">titulo 3</h2>
+		<h2 class="linha4">titulo 4</h2>
+		
+		<p class="fundo">um texto qualquer</p>
+		
+		<p class="linha5">Esse texto sublinhado, negrito e tamanho 30px</p>
+
+		<div>
+			um texto
+			<p>outro texto</p>
+		</div>
+		
+		
+	</body>
+</html>

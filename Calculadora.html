@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <style>
+        .calculadora{
+            background-color: white;
+            height: 350px;
+            width: 216px;
+        }
+
+        .superior, .sinais, .resultado, .numerais{
+            border: 2px solid yellow;
+        }
+
+         
+
+        .resultado{
+            color: white;
+            background-color: black;
+            text-align: end;
+            font-size: 30px;
+            height: 40px;
+            padding-top: 20px;
+            padding-right: 5px;
+        
+        }    
+        .superior {
+            color: white;
+            background-color: darkgray;
+            text-align: center;            
+            width: 50px;
+            height: 30px;
+            padding-top: 10px;
+            float: left;
+        }
+        .numerais {
+            color: white;
+            background-color: gray;
+            text-align: center;
+            width: 50px;
+            height: 30px;
+            padding-top: 10px;
+            float: left;         
+
+        }
+        .sinais {
+            color: white;
+            background-color: red;
+            text-align: center;
+            width: 50px;
+            height: 30px;
+            padding-top: 10px;
+            float: right;
+        }
+        .setenove{
+            text-align: center;
+            width: 75%;
+            float: left;
+        }
+        .quatroseis{
+            text-align: center;
+            width: 75%;
+            float: left;
+        }
+        .umtres{
+            text-align: center;
+            width: 75%;
+            float: left;
+        }
+        .pontos{
+            text-align: center;
+            width: 75%;
+            float: left;
+        }
+        
+        .superior:hover, .numerais:hover, .sinais:hover {
+            background-color: aqua;
+            cursor: pointer;
+        }
+        
+
+    </style>
+
+</head>
+<body>
+    <div class="calculadora">
+        <div class="resultado">0</div>
+
+        <div class="superior">AC</div>
+        <div class="superior">+/-</div>
+        <div class="superior">%</div>
+        <div class="sinais">/</div>
+
+        <div class="setenove">
+            <div class="numerais">7</div>
+            <div class="numerais">8</div>
+            <div class="numerais">9</div>
+        </div>
+        
+        <div class="sinais">x</div>
+
+        <div class="quatroseis">
+            <div class="numerais">4</div>
+            <div class="numerais">5</div>
+            <div class="numerais">6</div>
+        </div>
+
+        <div class="sinais">-</div>
+
+        <div class="umtres">
+            <div class="numerais">1</div>
+            <div class="numerais">2</div>
+            <div class="numerais">3</div>
+        </div>
+
+        <div class="sinais">+</div>
+
+        <div class="pontos">
+            <div class="numerais">0</div>
+            <div class="numerais">,</div>
+        </div>
+
+        <div class="sinais">=</div>
+
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        .inicio, .numerais, .sinais, .resultado, .maior {
+            background-color: gray;
+                        
+        }
+
+        .resultado {
+            padding: 3px;
+            color: white;
+            text-align: end;
+            font-size: 45px;
+            background-color: rgb(93, 67, 134);
+            border: 1px solid yellow;
+            line-height: 70px;
+            width: 215px;            
+        }
+        
+        .inicio {
+            background-color: darkgrey;
+            border: 1px solid yellow;
+            color: white;
+            line-height: 40px;
+            width: 50px;
+        }
+
+        .numerais {
+            border: 1px solid yellow;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            width: 50px;
+        }
+
+        .sinais {
+            background-color: red;
+            border: 1px solid yellow;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            width: 50px;
+        }
+
+        .igual{
+            background-color: red;
+            border: 1px solid yellow;
+            color: white;
+            text-align: center;
+            line-height: 40px;
+            width: 50px;
+        }
+
+        .maior{
+            border: 1px solid yellow;
+            line-height: 40px;
+            width: 50px;
+        }
+
+        .inicio:hover, .numerais:hover, .sinais:hover, .igual:hover {
+            background-color: black;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <div class="calculadora">calculadora
+            
+            <div class="resultado">0</div>
+            
+            <tr>
+                <th class="inicio">AC</th>
+                <th class="inicio">+/-</th>
+                <th class="inicio">%</th>
+                <th class="sinais">/</th>
+            </tr>
+
+            <tr>
+                <td class="numerais">7</td>
+                <td class="numerais">8</td>
+                <td class="numerais">9</td>
+                <td class="sinais">x</td>
+            </tr>
+
+            <tr>
+                <td class="numerais">4</td>
+                <td class="numerais">5</td>
+                <td class="numerais">6</td>
+                <td class="sinais">-</td>
+            </tr>
+
+            <tr>
+                <td class="numerais">1</td>
+                <td class="numerais">2</td>
+                <td class="numerais">3</td>
+                <td class="sinais">+</td>
+            </tr>
+
+            <tr>
+                <td class="numerais">0</td>
+                <td class="maior">   </td>
+                <td class="numerais">,</td>
+                <td class="igual">=</td>
+            </tr>
+        </div>
+
+
+    </table>
+    
+</body>
+</html>
