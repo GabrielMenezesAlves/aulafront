@@ -6,10 +6,7 @@
     <title>Calculadora</title>
 
     <style>
-        div, span{
-            border: 1px solid red;
-            
-        }
+        
 
         .calculadora{
             width: 222px;
@@ -20,10 +17,12 @@
         }
 
         .visor{
-            text-align: right;
+            text-align: right;               
             font-size: 50px;
             color: white;
             font-family: Arial, Helvetica, sans-serif;
+            margin-top: 70px;
+            padding-right: 10px;
         }
         .botao {
             display: inline-block;
@@ -46,6 +45,22 @@
             color: white;
         }
 
+        .dk{
+            background-color: #a5a5a5;
+        }
+
+        .zero{
+            border-radius: 20px;
+            width: 80px;
+            text-align: left;
+            padding-left: 15px;
+        }
+
+        .botao:hover {
+            background-color: blue;
+            cursor: pointer;
+        }
+
 
 
     </style>
@@ -58,6 +73,21 @@
         <div class="botao cinza">&#37;</div>
         <div class="botao cinza">&#8723;</div>
         <div class="botao laranja">&#247;</div>
+        <div class="botao dk">7</div>
+        <div class="botao dk">8</div>
+        <div class="botao dk">9</div>
+        <div class="botao laranja">x</div>
+        <div class="botao dk">4</div>
+        <div class="botao dk">5</div>
+        <div class="botao dk">6</div>
+        <div class="botao laranja">-</div>
+        <div class="botao dk">1</div>
+        <div class="botao dk">2</div>
+        <div class="botao dk">3</div>
+        <div class="botao laranja">+</div>
+        <div class="botao dk zero">0</div>
+        <div class="botao dk">,</div>
+        <div class="botao laranja">=</div>
     </div>
     
 </body>
