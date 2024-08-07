@@ -11,7 +11,7 @@ function ex1() {
     
     if (entrada == "f") {
         saida.value = "Feminino";
-    } if (entrada == "m") {
+    } else if (entrada == "m") {
         saida.value = "Masculino";
     } else {
         saida.value = "Outro";
@@ -25,16 +25,16 @@ function ex2() {
 
     if (entrada == "a"){
         saida.value = "vogal";
-    }
+    } else
     if (entrada == "e"){
         saida.value = "vogal";
-    }
+    } else
     if (entrada == "i"){
         saida.value = "vogal";
-    }
+    } else
     if (entrada == "o"){
         saida.value = "vogal";
-    }
+    } else
     if (entrada == "u"){
         saida.value = "vogal";
     } else {
