@@ -9,9 +9,9 @@ function ex1() {
     saida.value = entrada;
 
     
-    if (entrada = f) {
+    if (entrada == "f") {
         saida.value = "Feminino";
-    } if (entrada = m) {
+    } if (entrada == "m") {
         saida.value = "Masculino";
     } else {
         saida.value = "Outro";
@@ -23,19 +23,19 @@ function ex2() {
     var entrada = valor.value;
     saida.value = entrada;
 
-    if (entrada = a){
+    if (entrada == "a"){
         saida.value = "vogal";
     }
-    if (entrada = e){
+    if (entrada == "e"){
         saida.value = "vogal";
     }
-    if (entrada = i){
+    if (entrada == "i"){
         saida.value = "vogal";
     }
-    if (entrada = o){
+    if (entrada == "o"){
         saida.value = "vogal";
     }
-    if (entrada = u){
+    if (entrada == "u"){
         saida.value = "vogal";
     } else {
         saida.value = "consoante";
