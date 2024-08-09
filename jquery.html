@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script>
+        function cor()
+        {
+            var cor = $("#cores").val();
+            console.log(cor);
+
+            jQuery(".titulo").css("color", "red");
+            $(".titulo").css("background-color", cor);
+        }
+
+        function mostrar()
+        {
+            $(".exibir").slideToggle();
+        }
+        // document executa uma funcao quando a pagina esta totalmente carregada.
+        $(document).ready(cor);
+
+    </script>
+
+    
+</head>
+<body>
+
+    <h1 class="titulo">Jquery</h1>
+    <h1 class="exibir">Jquery 2</h1>
+    <input id="cores" type="color" />
+    <button onclick="cor()">mudar cor</button>
+
+    <button onclick="mostrar()">mostrar</button>
+
+    
+    
+</body>
+</html>
