@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+
+    <style>
+        .fundo {
+            background-color: black;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+        .spot {
+            background-color: #2b3035;
+            color: white;
+            margin: 5px;
+            border-radius: 5px;
+            position: absolute;
+            height: 150px;
+            width: 400px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .navbar {
+            display: block;
+            position: sticky;
+            height: 50px;
+            width: 1470px;
+            float: right;
+            border-radius: 5px;
+
+        }
+
+        .bt1 {
+            background-color: black;
+            color: white;
+            border-radius: 20px;
+            width: 130px;
+            font-size: 14px;
+            position: absolute;
+            right: 150px;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 8px;
+
+        }
+
+        .bt2 {
+            background-color: white;
+            color: black;
+            border-radius: 20px;
+            width: 130px;
+            font-size: 14px;
+            right: 10px;
+            position: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+            top: 8px;
+        }
+
+        .bt1:hover,
+        .bt2:hover {
+            font-size: 16px;
+        }
+
+        .card-group {
+            position: relative;
+            height: 300px;
+            width: 600px;
+            float: right;
+            right: 870px;
+            top: 10px;
+        }
+
+        .foto {
+            background-color: #2b3035;
+        }
+
+        .card-body {
+            color: white;
+            background-color: #2b3035;
+        }
+
+        .hj {
+            border-radius: 120px;
+        }
+
+        .znc {
+            border-radius: 120px;
+        }
+
+        .cast {
+            border-radius: 120px;
+        }
+
+        .card-title {
+            text-align: start;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="fundo">
+        <div class="spot">
+            <nav class="nav flex-column">
+                <a class="nav-link active" aria-current="page" href="#">Spotify</a>
+                <a class="nav-link" href="#">Inicio</a>
+                <a class="nav-link" href="#">Buscar</a>
+            </nav>
+        </div>
+
+        <div class="navbar">
+            <nav class="navbar bg-body-tertiary" data-bs-theme="dark">
+                <form class="container-fluid justify-content-start">
+                    <button class="btn btn-outline-success me-2 bt1" type="button">Inscrever-se</button>
+                    <button class="btn btn-outline-success me-2 bt2" type="button">Entrar</button>
+                </form>
+            </nav>
+        </div>
+
+        <div class="card-group">
+            <div class="card">
+                <div class="foto">
+                    <img src="henrique.jpg" class="card-img-top hj" alt="">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Henrique e Juliano</h5>
+                    <p class="card-text">Artista</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="foto">
+                    <img src="zeneto.jpg" class="card-img-top znc" alt="">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Ze Neto e Cristiano</h5>
+                    <p class="card-text">Artista</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="foto">
+                    <img src="ana.jpg" class="card-img-top cast" alt="">
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Ana Castela</h5>
+                    <p class="card-text">Artista</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
