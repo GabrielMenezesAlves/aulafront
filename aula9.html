@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bootstrap</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" />
+    <script src="jquery-3.7.1.min.js"></script>
+
+    <script src="aula9.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="card mt-5">
+            <div class="card-header">
+                <h1>Cadastro de Atendimento</h1>
+            </div>
+            <div class="card-body">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">Nome paciente</label>
+                            <input id="paciente" class="form-control is-invalid" type="text" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="form-label">Nome Tutor</label>
+                            <input class="form-control" type="text" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                            <label class="form-label">Telefone</label>
+                            <input class="form-control" type="text" />
+                        </div>
+                        <div class="col-2">
+                            <label class="form-label">Idade</label>
+                            <input class="form-control" type="text" />
+                        </div>
+                    </div>
+                    <div class="rol">
+                        <div class="col">
+                            <label class="form-label">Sexo</label>
+                            <div class="form-check">
+                                <input name="sexo" class="form-check-input" type="radio" />
+                                <label class="form-check-label">Macho</label>
+                            </div>
+                            <div class="form-check">
+                                <input name="sexo" class="form-check-input" type="radio" />
+                                <label class="form-check-label">Femea</label>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label class="form-label">Tipo de servico</label>
+                            <select id="servico" class="form-select">
+                                <option value="0"> -- Selecione --</option>
+                                <option value="10">Consulta</option>
+                                <option value="11">Banho e Tosa</option>
+                                <option value="12">Internamento</option>
+                                <option value="13">Exames</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr />
+
+                    <div id="form-consulta" class="row d-none">
+                        <div class="col">
+                            <label class="form-label">Medico</label>
+                            <input class="form-control" type="text" />
+                        </div>
+                    </div>
+
+                    <div id="form-banho" class="row d-none">
+                        <div class="col">
+                            <label class="form-label">Servico</label>
+                            <select class="form-select">
+                                <option>Banho</option>
+                                <option>Escova</option>
+                                <option>Tosa</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="form-internamento" class="row d-none">
+                        <div class="col">
+                            <label class="form-label">Data de entrada</label>
+                            <input class="form-control" type="datetime" />
+                        </div>
+                    </div>
+
+                    <div id="form-exames" class="row d-none">
+                        <div class="col">
+                            <label>Exames Solicitados</label>
+
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" />
+                                <label class="form-check-label">Hemograma</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" />
+                                <label class="form-check-label">GamaGT</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" />
+                                <label class="form-check-label">Glicemia</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" />
+                                <label class="form-check-label">TGO</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <button id="bt-salvar" class="btn btn-primary">Salvar</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
