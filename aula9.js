@@ -22,10 +22,39 @@ $(document).ready(function(){
 
     $("#bt-salvar").click(function(){
 
-        if ($("#paciente").val() == "")
+        $("input, select").removeClass("is-invalid");
+
+        if ($("#paciente").val().trim() == "")
         {
-            alert("o nome do paciente e obrigatorio");
+            $("#paciente").addClass("is-invalid");
         }
+
+        if ($("#tutor").val().trim() == "")
+        {
+            $("#tutor").addClass("is-invalid");
+        }
+
+        if ($("#idade").val().trim() == "")
+        {
+            $("#idade").addClass("is-invalid");
+        }
+        
+        if ($("#fone").val().trim() == "")
+        {
+            $("#fone").addClass("is-invalid");
+        }
+
+        if ($("#servico").val() == "0")
+        {
+            $("#servico").addClass("is-invalid");
+        }
+
+        if ($(".sexo:checked").length == 0)
+        {
+            $(".sexo").addClass("is-invalid");
+        }   
+
+            
 
     }); // fim do bt-salvar
 

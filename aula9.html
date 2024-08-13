@@ -25,34 +25,38 @@
                     <div class="row">
                         <div class="col">
                             <label class="form-label">Nome paciente</label>
-                            <input id="paciente" class="form-control is-invalid" type="text" />
+                            <input id="paciente" class="form-control" type="text" />
+                            <div class="invalid-feedback">Campo Obrigatorio</div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
                             <label class="form-label">Nome Tutor</label>
-                            <input class="form-control" type="text" />
+                            <input id="tutor" class="form-control" type="text" />
+                            <div class="invalid-feedback">Campo Obrigatorio</div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-4">
                             <label class="form-label">Telefone</label>
-                            <input class="form-control" type="text" />
+                            <input id="fone" class="form-control" type="text" />
+                            <div class="invalid-feedback">Campo Obrigatorio</div>
                         </div>
                         <div class="col-2">
                             <label class="form-label">Idade</label>
-                            <input class="form-control" type="text" />
+                            <input id="idade" class="form-control" type="text" />
+                            <div class="invalid-feedback">Campo Obrigatorio</div>
                         </div>
                     </div>
                     <div class="rol">
                         <div class="col">
                             <label class="form-label">Sexo</label>
                             <div class="form-check">
-                                <input name="sexo" class="form-check-input" type="radio" />
+                                <input id="sexo-m" name="sexo" value="M" class="form-check-input sexo" type="radio" />
                                 <label class="form-check-label">Macho</label>
                             </div>
                             <div class="form-check">
-                                <input name="sexo" class="form-check-input" type="radio" />
+                                <input id="sexo-f" name="sexo" value="F" class="form-check-input sexo" type="radio" />
                                 <label class="form-check-label">Femea</label>
                             </div>
                         </div>
