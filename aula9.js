@@ -42,6 +42,15 @@ $(document).ready(function(){
         if ($("#fone").val().trim() == "")
         {
             $("#fone").addClass("is-invalid");
+        } else {
+            // verifica um padrao
+            var padrao = /\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}/gm;
+
+            if (padrao.test($("#fone").val()) == false)
+            {
+                $("#fone").addClass("is-invalid");
+            }
+
         }
 
         if ($("#servico").val() == "0")
@@ -52,10 +61,20 @@ $(document).ready(function(){
         if ($(".sexo:checked").length == 0)
         {
             $(".sexo").addClass("is-invalid");
-        }   
-
+        } 
             
-
     }); // fim do bt-salvar
+
+    $("#idade").keydown(function(ev){
+
+        var padrao = /[0-9]/;
+
+        if (padrao.test(ev.key) == false){
+        
+        return false;
+    
+    }
+
+    }); // fim do keydown
 
 }); // fim do document.ready
